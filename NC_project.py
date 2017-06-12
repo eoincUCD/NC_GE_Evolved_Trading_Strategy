@@ -41,10 +41,8 @@ Import libraries
 
 
 import pandas as pd
-import numpy as np
 import time
 import datetime
-import random
 
 
 def generate_csv():  # Save each equity in it's own csv file
@@ -75,3 +73,9 @@ def generate_csv():  # Save each equity in it's own csv file
 if __name__ == "__main__":  # Run program
     # generate_csv()
     print("Complete")
+
+
+
+# AAPL UW Equity.csv
+# import list of equities from data/equities.csv . . . no header
+
