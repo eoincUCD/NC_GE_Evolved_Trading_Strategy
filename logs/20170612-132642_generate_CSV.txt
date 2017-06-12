@@ -1,0 +1,3 @@
+Date and time: 2017-06-12 13:26:42.106577
+Equity saved to CSV: A UN Equity
+Time taken to generate: 15.823527812957764

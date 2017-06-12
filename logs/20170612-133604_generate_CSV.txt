@@ -1,0 +1,4 @@
+Date and time: 2017-06-12 13:36:04.617322
+Equity saved to CSV: A UN Equity
+Equity saved to CSV: AAL UW Equity
+Time taken to generate: 16.032546758651733
