@@ -1,4 +1,4 @@
-# NC-Nueral-Network-Trading-Strategy
+# NC-Neural-Network-Trading-Strategy
 
 Evolving Short-Term Trading Strategies with Machine Learning
 
