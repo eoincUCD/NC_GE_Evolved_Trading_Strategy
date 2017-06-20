@@ -3,7 +3,7 @@ CODON_SIZE:             100000
 CROSSOVER:              variable_onepoint
 CROSSOVER_PROBABILITY:  0.75
 DEBUG:                  False
-GENERATIONS:            5
+GENERATIONS:            10
 MAX_GENOME_LENGTH:      500
 GRAMMAR_FILE:           trading.pybnf
 INITIALISATION:         PI_grow
