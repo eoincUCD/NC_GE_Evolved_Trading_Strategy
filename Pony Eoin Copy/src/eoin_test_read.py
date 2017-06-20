@@ -19,19 +19,15 @@ d["points"] = int((len(df) - 105) / 17)  # Number of data points available per y
 d["cash"] = 10000
 d["shares"] = 0
 
-for i in range(16):  # Loop 16 times - one for each year of data . . . roughly
+for i in range(15):  # Loop 15 times - one for each year of data . . . roughly
     start = i * d["points"]  # Start of that year
     end = (i+1) * d["points"]  # End of that year
-    # print(i, start, end)
-    # start = 1968
-    # end = 2214
     for j in range(start, end):  # Loop for each day in that year
         x = 0
         for k in range(start, end):
             point = "point_" + str(x)
-            d[point] = df.iloc[j, 4]
+            d[point] = df.iloc[j+x, 4]
             x = x + 1
-        # print(j, ":", d)
         d["last_price"] = d[point]
 
         # todo exec on this point
@@ -50,12 +46,12 @@ for i in range(16):  # Loop 16 times - one for each year of data . . . roughly
             d["cash"] = d["cash"] + d["shares"] * d["last_price"]
             d["shares"] = 0
 
-        out_file.write(str(i) + " " + str(j) + str(d) + "\n")
+        out_file.write(str(i) + " " + str(j) + " " + str(d) + "\n")
 
     d["cash"] = d["cash"] + d["shares"] * d["last_price"]
     d["shares"] = 0
     d["XXX_output_XXX"] = d["cash"]
 
-out_file.write("Final result, cash remaining after 10000:" + d["XXX_output_XXX"] + "\n")
+out_file.write("Final result, cash remaining after 10000:" + str(d["XXX_output_XXX"]) + "\n")
 print("Final result, cash remaining after 10000:", d["XXX_output_XXX"])
 out_file.close()
