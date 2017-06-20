@@ -1,0 +1,16 @@
+0: Current cash: 9613.8946
+1: Current cash: 7346.0648
+2: Current cash: 9417.3151
+3: Current cash: 0.91899999998
+4: Current cash: 7.27319999995
+5: Current cash: 39133.5565
+6: Current cash: 45290.8943
+7: Current cash: 9.83989999995
+8: Current cash: 38738.1844
+9: Current cash: 42.1746999999
+10: Current cash: 47.2509999999
+11: Current cash: 2.6651
+12: Current cash: 19.1147000001
+13: Current cash: 106.0294
+14: Current cash: 13.0544000001
+Final result, cash remaining after 10000:59671.8544

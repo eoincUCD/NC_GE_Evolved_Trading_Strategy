@@ -46,12 +46,14 @@ for i in range(15):  # Loop 15 times - one for each year of data . . . roughly
             d["cash"] = d["cash"] + d["shares"] * d["last_price"]
             d["shares"] = 0
 
-        out_file.write(str(i) + " " + str(j) + " " + str(d) + "\n")
+        # out_file.write(str(i) + " " + str(j) + " " + str(d) + "\n")
+
+    out_file.write(str(i) + ": Current cash: " + str(d["cash"]) + "\n")
 
     d["cash"] = d["cash"] + d["shares"] * d["last_price"]
     d["shares"] = 0
     d["XXX_output_XXX"] = d["cash"]
 
-out_file.write("Final result, cash remaining after 10000:" + str(d["XXX_output_XXX"]) + "\n")
+out_file.write("Final result, cash remaining after 10000: " + str(d["XXX_output_XXX"]) + "\n")
 print("Final result, cash remaining after 10000:", d["XXX_output_XXX"])
 out_file.close()
