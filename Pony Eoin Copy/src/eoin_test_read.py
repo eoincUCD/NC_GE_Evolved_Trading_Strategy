@@ -11,19 +11,22 @@ df = pd.read_csv(in_file)
 # Split data into 16 years with the 17th being a test case
 
 d = {}
+d["points"] = int((len(df) - 105) / 17)  # Number of data points available per year . . . we have 17 years of data
 d["cash"] = 10000
 d["shares"] = 0
 
 for i in range(16):  # Loop 16 times - one for each year of data . . . roughly
-    start = i * int((len(df) - 105) / 17)  # Start of that year . . . we have 17 years of data
-    end = (i+1) * int((len(df) - 105) / 17)  # End of that year
+    start = i * d["points"]  # Start of that year
+    end = (i+1) * d["points"]  # End of that year
     print(i, start, end)
+    # start = 1968
+    # end = 2214
     for j in range(start, end):  # Loop for each day in that year
         x = 0
-        point = "point_" + str(x)
         for k in range(start, end):
-            d[point] = df.iloc[start+j+x, 4]
-            x +=1
+            point = "point_" + str(x)
+            d[point] = df.iloc[j, 4]
+            x = x + 1
         # print(j, ":", d)
         d["last_price"] = d[point]
 
@@ -46,4 +49,4 @@ for i in range(16):  # Loop 16 times - one for each year of data . . . roughly
     d["cash"] = d["cash"] + d["shares"] * d["last_price"]
     d["shares"] = 0
     d["XXX_output_XXX"] = d["cash"]
-    print(i, ": Final result, cash remaining after 10000:", d["XXX_output_XXX"])
+print(": Final result, cash remaining after 10000:", d["XXX_output_XXX"])
