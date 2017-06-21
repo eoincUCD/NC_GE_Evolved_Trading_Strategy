@@ -1,0 +1,45 @@
+# see fitness/trading.py for docs.
+
+<p>::= <defp>{::}<callp>
+<defp> ::= def p():{:x = point_0{::}<code>{::}return x:}
+<callp> ::= XXX_output_XXX = p()
+
+------------------------------------------------------------------------
+
+
+# a function is a list of statements
+<code> ::= <stmt> | <stmt>{::}<code>
+
+# a statement is either an assignment or a for-loop
+<stmt> ::= x = <expr> | <for>
+
+# we don't allow recursive expressions (it becomes easy to hit inf),
+# but we do allow loops, including nested loops.
+<expr> ::= <const> | x | (x + <const>) | (x * <const>)
+<const> ::= 0.5
+
+# we could get nested loops where the inner overwrites the loop
+# variable of the outer, eg:
+
+# for i in range(3):
+#   for i in range(4):
+#     <do stuff>
+
+# but that's ok, because in Py3 scope is done correctly and we are not
+# using the value of i in <do stuff>.
+<for> ::= for i in <seq>:{:<code>:}
+<seq> ::= [<csitems>] | range(<i>+1)
+<i> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6
+<csitems> ::= <item> | <item>, <csitems>
+<item> ::= <i>
+
+
+# All of the averages
+<averages> ::= <avg> | <30avg> | <7avg> | <5avg> | <3avg>
+<avg> ::= (point_0 + point_1 + point_2 + point_3 + point_4 + point_5 + point_6 + point_7 + point_8 + point_9 + point_10 + point_11 + point_12 + point_13 + point_14 + point_15 + point_16 + point_17 + point_18 + point_19 + point_20 + point_21 + point_22 + point_23 + point_24 + point_25 + point_26 + point_27 + point_28 + point_29 + point_30 + point_31 + point_32 + point_33 + point_34 + point_35 + point_36 + point_37 + point_38 + point_39 + point_40 + point_41 + point_42 + point_43 + point_44 + point_45 + point_46 + point_47 + point_48 + point_49 + point_50 + point_51 + point_52 + point_53 + point_54 + point_55 + point_56 + point_57 + point_58 + point_59 + point_60 + point_61 + point_62 + point_63 + point_64 + point_65 + point_66 + point_67 + point_68 + point_69 + point_70 + point_71 + point_72 + point_73 + point_74 + point_75 + point_76 + point_77 + point_78 + point_79 + point_80 + point_81 + point_82 + point_83 + point_84 + point_85 + point_86 + point_87 + point_88 + point_89 + point_90 + point_91 + point_92 + point_93 + point_94 + point_95 + point_96 + point_97 + point_98 + point_99 + point_100 + point_101 + point_102 + point_103 + point_104 + point_105 + point_106 + point_107 + point_108 + point_109 + point_110 + point_111 + point_112 + point_113 + point_114 + point_115 + point_116 + point_117 + point_118 + point_119 + point_120 + point_121 + point_122 + point_123 + point_124 + point_125 + point_126 + point_127 + point_128 + point_129 + point_130 + point_131 + point_132 + point_133 + point_134 + point_135 + point_136 + point_137 + point_138 + point_139 + point_140 + point_141 + point_142 + point_143 + point_144 + point_145 + point_146 + point_147 + point_148 + point_149 + point_150 + point_151 + point_152 + point_153 + point_154 + point_155 + point_156 + point_157 + point_158 + point_159 + point_160 + point_161 + point_162 + point_163 + point_164 + point_165 + point_166 + point_167 + point_168 + point_169 + point_170 + point_171 + point_172 + point_173 + point_174 + point_175 + point_176 + point_177 + point_178 + point_179 + point_180 + point_181 + point_182 + point_183 + point_184 + point_185 + point_186 + point_187 + point_188 + point_189 + point_190 + point_191 + point_192 + point_193 + point_194 + point_195 + point_196 + point_197 + point_198 + point_199 + point_200 + point_201 + point_202 + point_203 + point_204 + point_205 + point_206 + point_207 + point_208 + point_209 + point_210 + point_211 + point_212 + point_213 + point_214 + point_215 + point_216 + point_217 + point_218 + point_219 + point_220 + point_221 + point_222 + point_223 + point_224 + point_225 + point_226 + point_227 + point_228 + point_229 + point_230 + point_231 + point_232 + point_233 + point_234 + point_235 + point_236 + point_237 + point_238 + point_239 + point_240 + point_241 + point_242 + point_243 + point_244 + point_245)/246
+<30avg> ::= (point_216 + point_217 + point_218 + point_219 + point_220 + point_221 + point_222 + point_223 + point_224 + point_225 + point_226 + point_227 + point_228 + point_229 + point_230 + point_231 + point_232 + point_233 + point_234 + point_235 + point_236 + point_237 + point_238 + point_239 + point_240 + point_241 + point_242 + point_243 + point_244 + point_245)/30
+<7avg> ::= (point_239 + point_240 + point_241 + point_242 + point_243 + point_244 + point_245) / 7
+<5avg> ::= (point_241 + point_242 + point_243 + point_244 + point_245) / 5
+<3avg> ::= (point_243 + point_244 + point_245) / 3
+
+<point> ::= point_0 | point_1 | point_2 | point_3 | point_4 | point_5 | point_6 | point_7 | point_8 | point_9 | point_10 | point_11 | point_12 | point_13 | point_14 | point_15 | point_16 | point_17 | point_18 | point_19 | point_20 | point_21 | point_22 | point_23 | point_24 | point_25 | point_26 | point_27 | point_28 | point_29 | point_30 | point_31 | point_32 | point_33 | point_34 | point_35 | point_36 | point_37 | point_38 | point_39 | point_40 | point_41 | point_42 | point_43 | point_44 | point_45 | point_46 | point_47 | point_48 | point_49 | point_50 | point_51 | point_52 | point_53 | point_54 | point_55 | point_56 | point_57 | point_58 | point_59 | point_60 | point_61 | point_62 | point_63 | point_64 | point_65 | point_66 | point_67 | point_68 | point_69 | point_70 | point_71 | point_72 | point_73 | point_74 | point_75 | point_76 | point_77 | point_78 | point_79 | point_80 | point_81 | point_82 | point_83 | point_84 | point_85 | point_86 | point_87 | point_88 | point_89 | point_90 | point_91 | point_92 | point_93 | point_94 | point_95 | point_96 | point_97 | point_98 | point_99 | point_100 | point_101 | point_102 | point_103 | point_104 | point_105 | point_106 | point_107 | point_108 | point_109 | point_110 | point_111 | point_112 | point_113 | point_114 | point_115 | point_116 | point_117 | point_118 | point_119 | point_120 | point_121 | point_122 | point_123 | point_124 | point_125 | point_126 | point_127 | point_128 | point_129 | point_130 | point_131 | point_132 | point_133 | point_134 | point_135 | point_136 | point_137 | point_138 | point_139 | point_140 | point_141 | point_142 | point_143 | point_144 | point_145 | point_146 | point_147 | point_148 | point_149 | point_150 | point_151 | point_152 | point_153 | point_154 | point_155 | point_156 | point_157 | point_158 | point_159 | point_160 | point_161 | point_162 | point_163 | point_164 | point_165 | point_166 | point_167 | point_168 | point_169 | point_170 | point_171 | point_172 | point_173 | point_174 | point_175 | point_176 | point_177 | point_178 | point_179 | point_180 | point_181 | point_182 | point_183 | point_184 | point_185 | point_186 | point_187 | point_188 | point_189 | point_190 | point_191 | point_192 | point_193 | point_194 | point_195 | point_196 | point_197 | point_198 | point_199 | point_200 | point_201 | point_202 | point_203 | point_204 | point_205 | point_206 | point_207 | point_208 | point_209 | point_210 | point_211 | point_212 | point_213 | point_214 | point_215 | point_216 | point_217 | point_218 | point_219 | point_220 | point_221 | point_222 | point_223 | point_224 | point_225 | point_226 | point_227 | point_228 | point_229 | point_230 | point_231 | point_232 | point_233 | point_234 | point_235 | point_236 | point_237 | point_238 | point_239 | point_240 | point_241 | point_242 | point_243 | point_244 | point_245

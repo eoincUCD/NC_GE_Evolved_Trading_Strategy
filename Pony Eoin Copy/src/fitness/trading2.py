@@ -4,7 +4,7 @@ import random  # todo delete random
 from math import floor
 
 
-class trading(base_ff):
+class trading2(base_ff):
     """
     derived from Py-max
     """
@@ -27,8 +27,9 @@ class trading(base_ff):
         d["points"] = int((len(df) - 105) / 17)  # Number of data points available per year . . we have 17 years of data
         d["cash"] = 10000
         d["shares"] = 0
+        d["x"] = 0
 
-        for i in range(15):  # Loop 15 times - one for each year of data . . . roughly
+        for i in range(1):  # Loop 15 times - one for each year of data . . . roughly
             start = i * d["points"]  # Start of that year
             end = (i + 1) * d["points"]  # End of that year
             for j in range(start, end):  # Loop for each day in that year
@@ -55,7 +56,7 @@ class trading(base_ff):
                 else:
                     d["cash"] = d["cash"] + d["shares"] * d["last_price"]
                     d["shares"] = 0
-
+            print(d["point_245"])
             d["cash"] = d["cash"] + d["shares"] * d["last_price"]
             d["shares"] = 0
             # d["XXX_output_XXX"] = d["cash"]

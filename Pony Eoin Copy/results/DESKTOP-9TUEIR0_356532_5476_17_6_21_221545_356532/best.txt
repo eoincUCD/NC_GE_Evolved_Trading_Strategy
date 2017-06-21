@@ -1,0 +1,19 @@
+Generation:
+2
+
+Phenotype:
+def p():
+  x = 0.0
+  for i in [0]:
+    x = 0.5
+    x = x
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[58419, 22084, 50744, 40508, 35301, 21360, 48511, 83406, 20126, 65528, 21177, 53522, 39430, 99688, 16282, 50714, 35761, 91390, 9269, 47163, 80654, 80106, 18463, 18376, 46216]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<stmt> (<for> for i in  (<seq> [ (<csitems> (<item> (<i> 0))) ]) :{: (<code> (<stmt> x =  (<expr> (<const> 0.5))) {::} (<code> (<stmt> x =  (<expr> x)))) :}))) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Fitness:
+0.5
