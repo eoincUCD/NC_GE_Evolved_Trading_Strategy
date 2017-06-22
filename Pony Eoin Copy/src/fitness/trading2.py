@@ -3,12 +3,15 @@ import pandas as pd
 import random  # todo delete random
 from math import floor
 
-
 class trading2(base_ff):
     """
     derived from Py-max
     """
     maximise = True  # True as it ever was.
+
+    global df_global
+    in_file = "../../data/AAPL UW Equity.csv"
+    df_global = pd.read_csv(in_file)
 
     def __init__(self):
         # Initialise base fitness function class.
@@ -19,12 +22,10 @@ class trading2(base_ff):
         # When we exec it, it will create a value XXX_output_XXX, but we exec
         # inside an empty dict for safety.
         random.seed(12345)
-        in_file = "../../data/AAPL UW Equity.csv"
-        df = pd.read_csv(in_file)
 
         p, d = ind.phenotype, {}
 
-        d["points"] = int((len(df) - 105) / 17)  # Number of data points available per year . . we have 17 years of data
+        d["points"] = int((len(df_global) - 105) / 17)  # Number of data points available per year . . we have 17 years of data
         d["cash"] = 10000
         d["shares"] = 0
 
@@ -35,7 +36,7 @@ class trading2(base_ff):
                 x = 0
                 for k in range(start, end):
                     point = "point_" + str(x)
-                    d[point] = df.iloc[j + x, 4]
+                    d[point] = df_global.iloc[j + x, 4]
                     x = x + 1
                 d["last_price"] = d[point]
 
