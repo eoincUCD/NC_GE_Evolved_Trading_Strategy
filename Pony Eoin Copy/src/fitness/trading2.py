@@ -27,7 +27,6 @@ class trading2(base_ff):
         d["points"] = int((len(df) - 105) / 17)  # Number of data points available per year . . we have 17 years of data
         d["cash"] = 10000
         d["shares"] = 0
-        d["x"] = 0
 
         for i in range(1):  # Loop 15 times - one for each year of data . . . roughly
             start = i * d["points"]  # Start of that year
@@ -43,26 +42,18 @@ class trading2(base_ff):
                 # todo exec on this point
                 exec(p, d)
 
-                d["out"] = random.random()
-                if d["out"] < 0.5:
-                    d["recommendation"] = "buy"
-                else:
-                    d["recommendation"] = "sell"
-
-                if d["recommendation"] == "buy":  # If buy, buy as many shares as we can
+                if d["XXX_output_XXX"] > 0:  # If > 0, buy as many shares as we can
                     quantity = floor(d["cash"] / d["last_price"])
                     d["shares"] = d["shares"] + quantity
                     d["cash"] = d["cash"] - quantity * d["last_price"]
-                else:
+                else:  # Sell all
                     d["cash"] = d["cash"] + d["shares"] * d["last_price"]
                     d["shares"] = 0
-            print(d["point_245"])
             d["cash"] = d["cash"] + d["shares"] * d["last_price"]
             d["shares"] = 0
-            # d["XXX_output_XXX"] = d["cash"]
 
         # Get the output
-        s = d['XXX_output_XXX']  # this is the program's output: a number.
+        s = d["cash"]  # this is the program's output: cash after trading.
         print(d["cash"])
         
         return s

@@ -28,7 +28,7 @@ class trading(base_ff):
         d["cash"] = 10000
         d["shares"] = 0
 
-        for i in range(2):  # Loop 15 times - one for each year of data . . . roughly
+        for i in range(15):  # Loop 15 times - one for each year of data . . . roughly
             start = i * d["points"]  # Start of that year
             end = (i + 1) * d["points"]  # End of that year
             for j in range(start, end):  # Loop for each day in that year
@@ -62,6 +62,6 @@ class trading(base_ff):
 
         # Get the output
         s = d['XXX_output_XXX']  # this is the program's output: a number.
-        print(d["cash"], d['XXX_output_XXX'])
+        print(d["cash"])
         
         return s

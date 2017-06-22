@@ -1,0 +1,17 @@
+Generation:
+2
+
+Phenotype:
+def p():
+  x = 0.0
+  x = 1.0
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[94486, 96389, 67408, 75930, 94236, 44769, 37092, 37398, 97159, 68246]
+Tree:
+None
+
+Fitness:
+10476.6992
