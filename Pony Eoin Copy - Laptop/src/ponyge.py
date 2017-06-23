@@ -27,7 +27,7 @@ def mane():
 
 
 if __name__ == "__main__":
-    # set_params(sys.argv[1:])  # exclude the ponyge.py arg itself
-    set_params(['--parameters', 'trading.txt'])  # exclude the ponyge.py arg itself
+    set_params(sys.argv[1:])  # exclude the ponyge.py arg itself
+    # set_params(['])  # exclude the ponyge.py arg itself
     # set_params(['--parameters', 'classification.txt'])  # exclude the ponyge.py arg itself
     mane()

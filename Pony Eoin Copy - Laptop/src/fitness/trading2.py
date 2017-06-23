@@ -13,47 +13,63 @@ class trading2(base_ff):
     def __init__(self):
         # Initialise base fitness function class.
         super().__init__()
+
+        in_file = "../../data/AAPL UW Equity.csv"
+        df = pd.read_csv(in_file)
+        self.data = df['PX_OPEN']
+
+        self.training = self.data[:-246]
+        self.test = self.data
+        self.n_vars = len(self.data)
+
+        self.training_test = True
     
     def evaluate(self, ind, **kwargs):
         # ind.phenotype will be a string, including function definitions etc.
         # When we exec it, it will create a value XXX_output_XXX, but we exec
         # inside an empty dict for safety.
-        random.seed(12345)
-        in_file = "../../data/AAPL UW Equity.csv"
-        df = pd.read_csv(in_file)
+
+        dist = kwargs.get('dist', 'training')
+
+        if dist == "training":
+            # Set training datasets.
+            data = self.training
+            start = 246
+
+        elif dist == "test":
+            # Set test datasets.
+            data = self.test
+            start = len(self.test) - 246
 
         p, d = ind.phenotype, {}
 
-        d["points"] = int((len(df) - 105) / 17)  # Number of data points available per year . . we have 17 years of data
-        d["cash"] = 10000
-        d["shares"] = 0
+        # print(p)
 
-        for i in range(1):  # Loop 15 times - one for each year of data . . . roughly
-            start = i * d["points"]  # Start of that year
-            end = (i + 1) * d["points"]  # End of that year
-            for j in range(start, end):  # Loop for each day in that year
-                x = 0
-                for k in range(start, end):
-                    point = "point_" + str(x)
-                    d[point] = df.iloc[j + x, 4]
-                    x = x + 1
-                d["last_price"] = d[point]
+        n_points = len(data)  # Number of data points available . . we have 17 years of data
 
-                # todo exec on this point
-                exec(p, d)
+        cash, shares = 10000, 0
 
-                if d["XXX_output_XXX"] > 0:  # If > 0, buy as many shares as we can
-                    quantity = floor(d["cash"] / d["last_price"])
-                    d["shares"] = d["shares"] + quantity
-                    d["cash"] = d["cash"] - quantity * d["last_price"]
-                else:  # Sell all
-                    d["cash"] = d["cash"] + d["shares"] * d["last_price"]
-                    d["shares"] = 0
-            d["cash"] = d["cash"] + d["shares"] * d["last_price"]
-            d["shares"] = 0
+        for i in range(start, n_points):
 
-        # Get the output
-        s = d["cash"]  # this is the program's output: cash after trading.
-        # print(d["cash"])
+            d['points'] = data[:i]
+            d['n_points'] = len(d['points'])
+
+            exec(p, d)
+
+            last_price = data[i]
+
+            if d["XXX_output_XXX"] > 0:  # If > 0, buy as many shares as we can
+                quantity = floor(cash / last_price)
+                shares = shares + quantity
+                cash = cash - quantity * last_price
+            else:  # Sell all
+                cash = cash + shares * last_price
+                shares = 0
+        cash = cash + shares * last_price
         
-        return s
+        return cash
+
+
+# --debug --grammar_file test.pybnf --verbose --fitness_function trading2 --generations 20 --population 20 --random_seed 517470
+# add cache
+# --target_seed_folder my_seeds

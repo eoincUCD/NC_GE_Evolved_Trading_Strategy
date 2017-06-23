@@ -1,0 +1,18 @@
+Generation:
+11
+
+Phenotype:
+def p():
+  x = 0.0
+  if points[492%len(points)] + points[3654%len(points)] + points[4224%len(points)] > points[4215%len(points)]:
+    x = (x + 0.5)
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[19274, 26525, 81332, 36101, 56804, 82146, 73125, 92204, 9126, 60636, 88628, 1929, 94857, 63798, 23472, 19141, 55776, 53577, 26677, 36622, 66266, 94431, 86084, 7797, 45170, 8394, 26380]
+Tree:
+None
+
+Fitness:
+632840.0525

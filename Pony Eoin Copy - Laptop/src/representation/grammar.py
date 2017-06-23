@@ -141,7 +141,8 @@ class Grammar(object):
                             else:
                                 # assume it's just an int
                                 n = int(m.group('range'))
-                        except (ValueError, AttributeError):
+                        except (ValueError, AttributeError) as e:
+                            print(e)
                             raise ValueError("Bad use of GE_RANGE: "
                                              + m.group())
 
