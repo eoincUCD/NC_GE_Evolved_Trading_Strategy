@@ -14,7 +14,7 @@ class trading(base_ff):
 
         in_file = "../data/AAPL UW Equity.csv"
         df = pd.read_csv(in_file)
-        self.data = df['PX_OPEN']
+        self.data = df[['PX_OPEN','PX_HIGH','PX_LOW']]
 
         self.training = self.data[:-246]
         self.test = self.data
@@ -47,12 +47,14 @@ class trading(base_ff):
 
         for i in range(start, n_points):
 
-            d['points'] = data[:i]
-            d['n_points'] = len(d['points'])
+            d['PX_OPEN'] = data['PX_OPEN'][:i]
+            d['PX_HIGH'] = data['PX_HIGH'][:i]
+            d['PX_LOW'] = data['PX_LOW'][:i]
+            d['n_points'] = len(d['PX_OPEN'])
 
             exec(p, d)
 
-            last_price = data[i]
+            last_price = data['PX_OPEN'][i]
 
             if d["XXX_output_XXX"] > 0:  # If > 0, buy as many shares as we can
                 quantity = cash / last_price

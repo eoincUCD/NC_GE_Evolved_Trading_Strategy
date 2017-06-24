@@ -1,0 +1,4 @@
+Desktop:
+10,20 = 2mins
+20,20 = 3mins
+50,500 = total_time :  7.53hrs
