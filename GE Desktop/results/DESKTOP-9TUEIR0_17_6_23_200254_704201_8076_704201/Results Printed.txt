@@ -1,0 +1,70 @@
+C:\ProgramData\Anaconda3\python.exe "C:/Users/Office/Google Drive/1. UCD Business Analytics/12. Natural Computing&Applications (MIS40980)/GE_Trading/src/run_ponyge.py" --target_seed_folder my_seeds
+
+Start:	 2017-06-23 20:02:54.704201 
+
+Warning: Grammar contains unit production for production rule <p>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <defp>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <callp>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <for>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <item>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <if>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <point>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <n_avg>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <n>
+         Unit productions consume GE codons.
+
+
+Best:
+  Training fitness:	 1829968.92107
+  Test fitness:		 10424.2917175
+  Phenotype: def p():
+  x = 0.0
+  for i in range(6+1):
+    if sum(points[-4234%len(points):])/len(points[-453%len(points):]) > sum(points[-3749%len(points):])/len(points[-4276%len(points):]):
+      x = (x / 0.6)
+      for i in range(5+1):
+        x = (x + 0.1)
+  for i in range(0+1):
+    if sum(points[-890%len(points):])/len(points[-3058%len(points):]) > points[3130%len(points)] + points[1645%len(points)]:
+      x = x
+      x = 1.0
+  return x
+XXX_output_XXX = p()
+  Genome: [75924, 43406, 53627, 89503, 92332, 94311, 86547, 22572, 64694, 58274, 26660, 86961, 94616, 85839, 10264, 47698, 7317, 22572, 99656, 80385, 59584, 8247, 98766, 34467, 2670, 98393, 61575, 2490, 29005, 59748, 61575, 2490, 11576, 86892, 32636, 80290, 14334, 26311, 57709, 40737, 94311, 17836, 58868, 7317, 22572, 15569, 92409, 26660, 94012, 7353, 82473, 20422, 15768, 24234, 2670, 11720, 93018, 48654, 57480, 85839, 83541, 98257, 99484, 66093, 7752, 57709, 42194]
+______
+
+  ave_fitness : 	 531371.472603
+  ave_genome_length : 	 84.615
+  ave_tree_depth : 	 12.296875
+  ave_tree_nodes : 	 43.8828125
+  ave_used_codons : 	 34.8046875
+  best_fitness : 	 1829968.92107
+  gen : 	 50
+  invalids : 	 2775
+  max_genome_length : 	 205
+  max_tree_depth : 	 17.0
+  max_tree_nodes : 	 126.0
+  max_used_codons : 	 101.0
+  min_genome_length : 	 5
+  min_tree_depth : 	 6.0
+  min_tree_nodes : 	 8.0
+  min_used_codons : 	 6.0
+  runtime_error : 	 11
+  time_adjust : 	 0
+  time_taken : 	 448.7980315685272
+  total_inds : 	 10200
+  total_time : 	 19590.71559858322
+  unique_inds : 	 3218
+  unused_search : 	 68.45098039215686
+
+
+
+Process finished with exit code 0

@@ -1,0 +1,19 @@
+Generation:
+2
+
+Phenotype:
+def p():
+  x = 0.0
+  x = 1.0
+  for i in range(1+1):
+    x = x
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[14718, 66850, 82386, 28569, 69016, 30575, 71338, 45268, 52248, 98637, 49931, 91740, 24052, 10131, 23592, 91773, 40844, 34296]
+Tree:
+None
+
+Fitness:
+1.0

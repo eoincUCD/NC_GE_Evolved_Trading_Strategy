@@ -1,0 +1,20 @@
+Generation:
+10
+
+Phenotype:
+def p():
+  x = 0.0
+  x = 0.6
+  x = x
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[96268, 17876, 19650, 3223, 86916, 35774, 70506, 79536, 91125, 81295, 85518, 69275, 44278, 81547, 76379]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<stmt> x =  (<expr> (<const> 0.6))) {::} (<code> (<stmt> x =  (<expr> x)))) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Training fitness:
+563323.551413
+Test fitness:
+15488.4189325

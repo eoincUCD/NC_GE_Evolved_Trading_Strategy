@@ -1,0 +1,27 @@
+Generation:
+5
+
+Phenotype:
+def p():
+  x = 0.0
+  for i in range(6+1):
+    if sum(points[-4234%len(points):])/len(points[-453%len(points):]) > sum(points[-3749%len(points):])/len(points[-4276%len(points):]):
+      x = (x / 0.6)
+      for i in range(5+1):
+        x = (x + 0.1)
+  for i in range(0+1):
+    if sum(points[-890%len(points):])/len(points[-3058%len(points):]) > points[3130%len(points)] + points[1645%len(points)]:
+      x = x
+      x = 1.0
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[75924, 43406, 53627, 89503, 92332, 94311, 86547, 22572, 64694, 58274, 26660, 86961, 94616, 85839, 10264, 47698, 7317, 22572, 99656, 80385, 59584, 8247, 98766, 34467, 2670, 98393, 61575, 2490, 29005, 59748, 61575, 2490, 11576, 86892, 32636, 80290, 14334, 26311, 57709, 40737, 94311, 17836, 58868, 7317, 22572, 15569, 92409, 26660, 94012, 7353, 82473, 20422, 15768, 24234, 2670, 11720, 93018, 48654, 57480, 85839, 83541, 98257, 99484, 66093, 7752, 57709, 42194]
+Tree:
+None
+
+Training fitness:
+1829968.92107
+Test fitness:
+10424.2917175

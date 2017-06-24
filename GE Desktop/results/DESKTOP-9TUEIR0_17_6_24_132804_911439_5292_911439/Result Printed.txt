@@ -1,0 +1,65 @@
+C:\ProgramData\Anaconda3\python.exe "C:/Users/Office/Google Drive/1. UCD Business Analytics/12. Natural Computing&Applications (MIS40980)/GE_Trading/src/run_ponyge.py"
+
+Start:	 2017-06-24 13:28:04.911439 
+
+Warning: Grammar contains unit production for production rule <p>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <defp>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <callp>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <for>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <item>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <if>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <point>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <n_avg>
+         Unit productions consume GE codons.
+Warning: Grammar contains unit production for production rule <n>
+         Unit productions consume GE codons.
+
+
+Best:
+  Training fitness:	 1474466.40216
+  Test fitness:		 15488.4189325
+  Phenotype: def p():
+  x = 0.0
+  if points[2370%len(points)] + points[2244%len(points)] ** points[1445%len(points)] + points[3048%len(points)] > sum(points[-394%len(points):])/len(points[-2130%len(points):]):
+    for i in [5, 3]:
+      x = 0.4
+  x = (x * 1.0)
+  return x
+XXX_output_XXX = p()
+  Genome: [53357, 35778, 87359, 54116, 75627, 3175, 79680, 41327, 81893, 76059, 34233, 86470, 54116, 78931, 3175, 79680, 41327, 81893, 23719, 34233, 38022, 13130, 54966, 34918, 31510, 33628, 96601, 20228, 68130, 2824, 43265, 41448, 43344, 25885, 19310, 44740, 2377, 64254, 36030, 74775, 90471, 82122, 53226, 92628, 55093, 86120, 72264, 57144, 99463, 91094, 78246, 80571, 40819, 39668, 72774, 91710, 18162, 27514, 10299, 86742, 73743, 94173, 16038, 50072, 45127, 47459, 45192, 55251, 44688, 68232, 16825, 91109, 18671, 27084, 78692, 18162, 3584, 60462, 33428, 14024, 25689, 92628, 38575, 89943, 2442, 83562, 9597, 35696, 79201, 78692, 4497, 49657, 91452, 80835, 16855, 84058, 64254, 65439, 68078, 69636, 2427, 20736, 6193, 85699, 41535, 72264, 50168, 78375, 95679, 36336, 98519, 90234, 78246, 80571, 53782, 8071, 2442, 8894, 64291, 57144, 36576, 35724, 50708, 41013, 68232, 19110, 50256, 73767, 37523, 1722, 52669, 89248, 52731, 13989, 77102, 53756]
+______
+
+  ave_fitness : 	 477048.237799
+  ave_genome_length : 	 92.614
+  ave_tree_depth : 	 11.2014563107
+  ave_tree_nodes : 	 32.4223300971
+  ave_used_codons : 	 25.8349514563
+  best_fitness : 	 1474466.40216
+  gen : 	 50
+  invalids : 	 6275
+  max_genome_length : 	 206
+  max_tree_depth : 	 17.0
+  max_tree_nodes : 	 173.0
+  max_used_codons : 	 137.0
+  min_genome_length : 	 16
+  min_tree_depth : 	 6.0
+  min_tree_nodes : 	 8.0
+  min_used_codons : 	 6.0
+  runtime_error : 	 37
+  time_adjust : 	 0
+  time_taken : 	 656.5028636455536
+  total_inds : 	 25500
+  total_time : 	 27132.599088668823
+  unique_inds : 	 7825
+  unused_search : 	 69.31372549019608
+
+
+
+Process finished with exit code 0
