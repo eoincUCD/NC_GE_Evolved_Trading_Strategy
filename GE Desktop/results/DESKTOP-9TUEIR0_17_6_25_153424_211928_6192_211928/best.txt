@@ -1,0 +1,21 @@
+Generation:
+10
+
+Phenotype:
+def p():
+  x = 0.0
+  if PX_HIGH[65] < PX_HIGH[108] + PX_LOW[141]:
+    x = 0.9
+    x = x
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[56046, 8389, 61618, 15302, 41567, 14394, 27029, 92218, 24396, 60270, 76844, 28165, 27939, 91137, 35834, 75876, 33540, 90760, 14241, 64036, 95759, 9973, 24408, 99145, 86430, 50410, 2496, 22605, 12953, 73748, 38338, 6783, 57923, 92102]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<stmt> (<if> if  (<data> (<point> PX_HIGH[ (<n> 65) ]))   (<eval> <)   (<data> (<sum> (<point> PX_HIGH[ (<n> 108) ])  +  (<point> PX_LOW[ (<n> 141) ]))) :{: (<code> (<stmt> x =  (<expr> (<const> 0.9))) {::} (<code> (<stmt> x =  (<expr> x)))) :}))) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Training fitness:
+685286.294274
+Test fitness:
+15488.4189325
