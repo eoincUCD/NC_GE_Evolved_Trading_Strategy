@@ -38,5 +38,4 @@
 <point> ::= PX_OPEN[<n>] | PX_HIGH[<n>] | PX_LOW[<n>]
 <n_avg> ::= sum(PX_OPEN[-<n>:])/len(PX_OPEN[-<n>:]) | sum(PX_HIGH[-<n>:])/len(PX_HIGH[-<n>:]) | sum(PX_LOW[-<n>:])/len(PX_LOW[-<n>:])
 
-<n> ::= <this>%len(PX_OPEN)
-<this> ::= GE_RANGE:dataset_n_vars
+<n> ::= GE_RANGE:246

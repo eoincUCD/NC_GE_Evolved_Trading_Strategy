@@ -40,6 +40,7 @@ class trading(base_ff):
             start = len(self.test) - 246
 
         p, d = ind.phenotype, {}
+        print(p)
 
         n_points = len(data)  # Number of data points available . . we have 17 years of data
 
@@ -47,9 +48,9 @@ class trading(base_ff):
 
         for i in range(start, n_points):
 
-            d['PX_OPEN'] = data['PX_OPEN'][:i]
-            d['PX_HIGH'] = data['PX_HIGH'][:i]
-            d['PX_LOW'] = data['PX_LOW'][:i]
+            d['PX_OPEN'] = list(data['PX_OPEN'][i-246:i])  # Only pass in one year worth of data
+            d['PX_HIGH'] = list(data['PX_HIGH'][i-246:i])
+            d['PX_LOW'] = list(data['PX_LOW'][i-246:i])
             d['n_points'] = len(d['PX_OPEN'])
 
             exec(p, d)
