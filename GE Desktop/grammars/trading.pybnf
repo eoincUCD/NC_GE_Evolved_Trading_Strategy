@@ -1,11 +1,11 @@
 # see fitness/trading.py for docs.
 
 <p>::= <defp>{::}<callp>
-<defp> ::= def p():{:x = 0.0{::}<code>{::}return x:}
+<defp> ::= def p():{:x = 0.0{::}<a>{::}<code>{::}return x:}
 <callp> ::= XXX_output_XXX = p()
 
 # a function is a list of statements
-<code> ::= <stmt> | <stmt>{::}<code>
+<code> ::= <stmt> | <stmt>{::}<code> | <a>{::}<code>
 
 # a statement is either an assignment, for-loop or if 
 <stmt> ::= x = <expr> | <for> | <if>
@@ -36,6 +36,6 @@
 
 # All of the averages
 <point> ::= PX_OPEN[<n>] | PX_HIGH[<n>] | PX_LOW[<n>]
-<n_avg> ::= sum(PX_OPEN[-<n>:])/len(PX_OPEN[-<n>:]) | sum(PX_HIGH[-<n>:])/len(PX_HIGH[-<n>:]) | sum(PX_LOW[-<n>:])/len(PX_LOW[-<n>:])
-
+<n_avg> ::= sum(PX_OPEN[-n:])/n | sum(PX_HIGH[-n:])/n | sum(PX_LOW[-n:])/n
+<a> ::= n = <n>
 <n> ::= GE_RANGE:246

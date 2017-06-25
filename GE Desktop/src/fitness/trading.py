@@ -13,6 +13,7 @@ class trading(base_ff):
         super().__init__()
 
         in_file = "../data/AAPL UW Equity.csv"
+        # in_file = "../data/KO UN Equity.csv"
         df = pd.read_csv(in_file)
         self.data = df[['PX_OPEN','PX_HIGH','PX_LOW']]
 
