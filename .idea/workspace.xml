@@ -14,7 +14,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NC_Nueral_Network_Trading_Strategy$NC_project.coverage" NAME="NC_project Coverage Results" MODIFIED="1497275213328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NC_Nueral_Network_Trading_Strategy$tensortest.coverage" NAME="tensortest Coverage Results" MODIFIED="1497282150088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
-    <SUITE FILE_PATH="coverage/NC_GE_Evolved_Trading_Strategy$run_ponyge.coverage" NAME="run_ponyge Coverage Results" MODIFIED="1498421993320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GE Desktop/src" />
+    <SUITE FILE_PATH="coverage/NC_GE_Evolved_Trading_Strategy$run_ponyge.coverage" NAME="run_ponyge Coverage Results" MODIFIED="1498434505188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GE Desktop/src" />
     <SUITE FILE_PATH="coverage/NC_Nueral_Network_Trading_Strategy$smalltftest.coverage" NAME="smalltftest Coverage Results" MODIFIED="1497282138057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Archive" />
     <SUITE FILE_PATH="coverage/NC_GE_Evolved_Trading_Strategy$trading.coverage" NAME="trading Coverage Results" MODIFIED="1498384902637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GE Desktop/src/fitness" />
     <SUITE FILE_PATH="coverage/NC_GE_Evolved_Trading_Strategy$trading__1_.coverage" NAME="trading (1) Coverage Results" MODIFIED="1497877074887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PonyGE2_Eoin/src/fitness" />
@@ -45,7 +45,7 @@
           <file leaf-file-name="trading.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/GE Desktop/src/fitness/trading.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="238">
                   <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#51#0" expanded="true" />
@@ -67,12 +67,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="trading.txt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/GE Desktop/parameters/trading.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -154,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,7 +202,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,6 +514,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -568,13 +569,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NC_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NC_project.py" />
     <entry file="file://$PROJECT_DIR$/Archive/smalltftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -589,34 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NC_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NC_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NC_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NC_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NC_project.py" />
+    <entry file="file://$PROJECT_DIR$/NC_project.py" />
+    <entry file="file://$PROJECT_DIR$/NC_project.py" />
+    <entry file="file://$PROJECT_DIR$/NC_project.py" />
     <entry file="file://$PROJECT_DIR$/NC_read_csv.py" />
     <entry file="file://$PROJECT_DIR$/Archive/smalltftest.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,13 +614,7 @@
     <entry file="file://$PROJECT_DIR$/PonyGE2_Eoin/src/ponyge.py" />
     <entry file="file://$PROJECT_DIR$/PonyGE2_Eoin/src/fitness/trading.py" />
     <entry file="file://$PROJECT_DIR$/PonyGE2_Eoin/src/eoin_test_read.py" />
-    <entry file="file://$PROJECT_DIR$/NC_project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/NC_project.py" />
     <entry file="file://$PROJECT_DIR$/PonyGE2_Eoin/grammars/trading.pybnf" />
     <entry file="file://$PROJECT_DIR$/PonyGE2_Eoin/parameters/trading.txt" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/pandas/core/generic.py" />
@@ -708,13 +673,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GE Desktop/src/fitness/trading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="238">
           <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
@@ -732,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GE Desktop/parameters/trading.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
