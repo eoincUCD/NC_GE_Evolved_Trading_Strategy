@@ -1,9 +1,9 @@
 CACHE:                  True
 CODON_SIZE:             100000
 CROSSOVER:              variable_onepoint
-CROSSOVER_PROBABILITY:  0.75
+CROSSOVER_PROBABILITY:  0.60
 DEBUG:                  False
-GENERATIONS:            15
+GENERATIONS:            10
 MAX_GENOME_LENGTH:      500
 GRAMMAR_FILE:           trading.pybnf
 INITIALISATION:         PI_grow
@@ -15,5 +15,7 @@ POPULATION_SIZE:        1000
 FITNESS_FUNCTION:       trading
 REPLACEMENT:            generational
 SELECTION:              tournament
-TOURNAMENT_SIZE:        3
+TOURNAMENT_SIZE:        20
 VERBOSE:                True
+MAX_WRAPS:              10
+TARGET_SEED_FOLDER:     my_seeds
