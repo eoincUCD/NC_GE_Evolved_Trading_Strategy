@@ -1,5 +1,5 @@
 Generation:
-8
+10
 
 Phenotype:
 def p():
@@ -17,5 +17,7 @@ Genotype:
 Tree:
 None
 
-Fitness:
+Training fitness:
 1660684.53356
+Test fitness:
+15488.4189325

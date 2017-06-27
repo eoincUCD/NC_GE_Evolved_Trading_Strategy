@@ -1,0 +1,22 @@
+Generation:
+10
+
+Phenotype:
+def p():
+  x = 0.0
+  n = 59
+  b = 97
+  if 0.6 < PX_HIGH[-1]:
+    (x / 0.2)
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[75250, 17071, 21529, 38384, 61112, 66034, 66814, 72442, 60908, 24535, 39647, 79051, 62297, 21625, 38515, 14611, 81627, 9244, 74490, 98483, 88382, 24267, 3445, 32458]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<a> n =  (<n> 59)) {::} (<b> b =  (<n> 97)) {::} (<if> if  (<data> (<const> 0.6))   (<eval> <)   (<data> (<point_today> PX_HIGH[-1])) :{: (<expr> (x /  (<const> 0.2) )) :})) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Training fitness:
+10000.0
+Test fitness:
+10000.0
