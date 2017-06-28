@@ -1,0 +1,24 @@
+Generation:
+10
+
+Phenotype:
+def p():
+  x = 0.0
+  n = 235
+  b = 40
+  if 0.5 > PX_LOW[b] - PX_HIGH[-1]:
+    x = (x + 0.9)
+    b = 245
+    x = (x * 0.2)
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[26745, 90402, 43678, 43285, 72126, 53176, 39728, 17371, 39709, 18449, 79204, 692, 66498, 64681, 28971, 43907]
+Tree:
+None
+
+Training fitness:
+1076651.5219
+Test fitness:
+13356.4725221

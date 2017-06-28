@@ -1,0 +1,22 @@
+Generation:
+5
+
+Phenotype:
+def p():
+  x = 0.0
+  n = 192
+  b = 108
+  if sum(PX_OPEN[-n:])/n > sum(PX_LOW[-n:])/n:
+    (x - 1.0)
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[11233, 62323, 8163, 57612, 58262, 96257, 55050, 28950, 14285, 58037, 48199, 94641, 84486, 64745, 85872, 11838, 27308, 54354, 8277, 62863, 65045, 59615, 6220, 17334]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<a> n =  (<n> 192)) {::} (<b> b =  (<n> 108)) {::} (<if> if  (<data> (<n_avg> sum(PX_OPEN[-n:])/n))   (<eval> >)   (<data> (<n_avg> sum(PX_LOW[-n:])/n)) :{: (<expr> (x -  (<const> 1.0) )) :})) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Training fitness:
+10000.0
+Test fitness:
+10000.0

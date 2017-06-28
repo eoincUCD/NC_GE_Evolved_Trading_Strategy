@@ -12,8 +12,11 @@ class trading(base_ff):
         # Initialise base fitness function class.
         super().__init__()
 
-        in_file = "../data/AAPL UW Equity.csv"
+        # in_file = "../data/AAPL UW Equity.csv"
         # in_file = "../data/KO UN Equity.csv"
+        # in_file = "../data/BA UN Equity.csv"
+        in_file = "../data/BAC UN Equity.csv"
+        print("Dataset:",  in_file)
         df = pd.read_csv(in_file)
         self.data = df[['PX_OPEN','PX_HIGH','PX_LOW']]
 

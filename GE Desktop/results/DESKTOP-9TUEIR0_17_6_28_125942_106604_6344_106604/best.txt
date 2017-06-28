@@ -1,0 +1,26 @@
+Generation:
+1
+
+Phenotype:
+def p():
+  x = 0.0
+  n = 156
+  b = 33
+  c = PX_OPEN[51] + sum(PX_LOW[-n:])/n
+  if c < PX_OPEN[b] / sum(PX_OPEN[-n:])/n:
+    x = (x * 1.0)
+  n = 187
+  b = 41
+  c = PX_OPEN[72]
+  if sum(PX_OPEN[-n:])/n - PX_HIGH[-1] < PX_HIGH[b]:
+    x = 1.0
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[90856, 23664, 32022, 10573, 53761, 11484, 35491, 43216, 72160, 57704, 57012, 32751, 81545, 98158, 77169, 72972, 81208, 72280, 73755, 48086, 18433, 29037, 31675, 13159, 53373, 35680, 46535, 13265, 49871, 53903, 47037, 59526, 32294, 80147, 24110, 75181, 39015, 7153, 20617, 30028, 957, 79064, 11388, 74397, 54358, 30209, 45879, 12580, 68644, 35448, 31146, 95199, 67648, 56353, 42704, 96135, 7664, 19322, 91390, 35115, 92203, 59520, 1693, 26714, 67336, 13869, 1397, 92177, 6225, 15682, 82631, 69549, 61305, 78755, 50203]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<a> n =  (<n> 156)) {::} (<b> b =  (<n> 33)) {::} (<c> c =  (<data> (<combo> (<data> (<point> PX_OPEN[ (<n> 51) ]))   (<combine> +)   (<data> (<n_avg> sum(PX_LOW[-n:])/n))))) {::} (<if> if c  (<eval> <)   (<data> (<combo> (<data> (<point> PX_OPEN[b]))   (<combine> /)   (<data> (<n_avg> sum(PX_OPEN[-n:])/n)))) :{:x =  (<expr> (x *  (<const> 1.0) )) :}) {::} (<code> (<a> n =  (<n> 187)) {::} (<b> b =  (<n> 41)) {::} (<c> c =  (<data> (<point> PX_OPEN[ (<n> 72) ]))) {::} (<if> if  (<data> (<combo> (<data> (<n_avg> sum(PX_OPEN[-n:])/n))   (<combine> -)   (<data> (<point_today> PX_HIGH[-1]))))   (<eval> <)   (<data> (<point> PX_HIGH[b])) :{:x =  (<expr> (<const> 1.0)) :}))) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Fitness:
+563323.551413

@@ -1,0 +1,28 @@
+Generation:
+5
+
+Phenotype:
+def p():
+  x = 0.0
+  n = 128
+  b = 66
+  c = sum(PX_LOW[-n:])/n
+  if c > PX_OPEN[175]:
+    x = (x + 0.5)
+  n = 11
+  b = 189
+  c = sum(PX_LOW[-n:])/n
+  if c > PX_HIGH[-1]:
+    x = 0.2
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[40964, 36230, 63777, 78296, 60890, 55939, 26880, 43101, 34460, 25868, 40997, 6134, 53801, 86163, 98083, 8761, 53884, 60864, 80997, 63233, 49724, 40533, 49646]
+Tree:
+None
+
+Training fitness:
+83661.1277609
+Test fitness:
+15593.1271423

@@ -1,0 +1,28 @@
+Generation:
+5
+
+Phenotype:
+def p():
+  x = 0.0
+  n = 229
+  b = 53
+  c = PX_OPEN[142]
+  if PX_HIGH[-1] < sum(PX_LOW[-n:])/n:
+    x = (x - 0.9)
+  n = 115
+  b = 210
+  c = PX_HIGH[b]
+  if PX_LOW[b] < PX_HIGH[-1]:
+    x = (x + 0.4)
+  return x
+XXX_output_XXX = p()
+
+Genotype:
+[13324, 27493, 63545, 25220, 60679, 85840, 79626, 39547, 67729, 97977, 55333, 53319, 96416, 14517, 28737, 39452, 32388, 88770, 75246, 68001, 63949, 61216, 49840, 24955, 23265, 64905, 97679, 4238, 59481, 36769, 34609, 40483, 95836, 25145, 66487, 96932, 39522, 66154, 49056, 59851, 96547, 14246, 50596, 72986, 34387, 83044, 3340, 12931, 7756, 88811, 48175, 19719, 29448, 26516]
+Tree:
+(<p> (<defp> def p():{:x = 0.0{::} (<code> (<a> n =  (<n> 229)) {::} (<b> b =  (<n> 53)) {::} (<c> c =  (<data> (<point> PX_OPEN[ (<n> 142) ]))) {::} (<if> if  (<data> (<point_today> PX_HIGH[-1]))   (<eval> <)   (<data> (<n_avg> sum(PX_LOW[-n:])/n)) :{:x =  (<expr> (x -  (<const> 0.9) )) :}) {::} (<code> (<a> n =  (<n> 115)) {::} (<b> b =  (<n> 210)) {::} (<c> c =  (<data> (<point> PX_HIGH[b]))) {::} (<if> if  (<data> (<point> PX_LOW[b]))   (<eval> <)   (<data> (<point_today> PX_HIGH[-1])) :{:x =  (<expr> (x +  (<const> 0.4) )) :}))) {::}return x:}) {::} (<callp> XXX_output_XXX = p()))
+
+Training fitness:
+751665.938324
+Test fitness:
+13912.3360308
