@@ -1,5 +1,5 @@
 Generation:
-14
+20
 
 Phenotype:
 def p():
